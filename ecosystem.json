@@ -19,11 +19,15 @@
       "ssh_options": "StrictHostKeyChecking=no",
       "ref"  : "origin/master",
       "repo" : "git@github.com:SHpoi/my-blog.git",
-      "path" : "/var/www/myblog/production",
+      "path" : "/root/www/myblog/production",
       "env": {
         "NODE_ENV": "production"
       },
-      "post-deploy" : "npm install && pm2 reload ecosystem.config.js --env production"
+      "pre-setup": "rm -rf /var/www/myblog/production/source",
+      "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production",
+      "env"  : {
+        "NODE_ENV": "production"
+      }
     }
   }
 }
