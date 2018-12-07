@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: sunqx
+title: sunqx的blog
 subtitle: 山堆再高终有限,水流再细无时休
 description: 前端geek
 author: Sunqx
 language: zh-CN
-timezone:
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
