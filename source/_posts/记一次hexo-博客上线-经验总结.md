@@ -178,6 +178,8 @@ force一定要加不然git会报冲突不解决
 -  ``"script": "app.js"`` 为了让json 找到app.js,所以放平级，这个json文件如果不是私有仓库不建议提交，当然我是提了，不过你们有高手千万别看了我的git项目的配置文件就攻击它，活动买的加上域名服务就12块钱。
 - ``/root/www/myblog/`` 我是为了方便我登进去就能找项目才放root下的。还有这个目录需先创建，不然pm2不知道部署在哪。
 
+- ``pm2 deploy ecosystem.json  production setup `` 有时候还需要再次执行，因为有时候会出现这种错误 ``bash: line 0: cd: /root/www/myblog/source: 没有那个文件或目录``
+
 #### nginx配置
 这一块没啥说的 无非就是端口转发， 80转4000
 nginx 安装
